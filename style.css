@@ -20,3 +20,8 @@ h1{
     display: block;
     color: red;
 }
+
+mark {
+    background-color: yellow;
+    color: black;
+}
