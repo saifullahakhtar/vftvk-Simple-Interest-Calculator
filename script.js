@@ -3,7 +3,12 @@ function compute()
     var principal = document.getElementById("principal").value;
     if(principal < 1)
     {
-        document.getElementById('error').innerHTML = "Enter a positive number";
+        if (window.confirm('Please Enter a positive number'))
+        {
+            
+            document.getElementById("principal").focus();
+        }
+        return false;
     }
     else
     {

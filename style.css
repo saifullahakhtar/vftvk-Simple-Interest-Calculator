@@ -16,11 +16,6 @@ h1{
     margin: auto;
 }
 
-#error {
-    display: block;
-    color: red;
-}
-
 mark {
     background-color: yellow;
     color: black;
