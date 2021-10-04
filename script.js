@@ -20,8 +20,15 @@ function compute()
     }
 }
 
-function updateRate() 
+function updateRate()
 {
-    var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    var rate  = document.getElementById("rate").value;
+    var rateV = document.getElementById('rate_val');
+
+    var newValue = Number( (rate - 1) * 95 / (20 - 1) );
+    var newPosition = 0;
+    rateV.innerHTML = `<span>${rate}%</span>`;
+    rateV.style.left = `calc(${newValue}% + (${newPosition}px))`;
+
+    document.getElementById("rate_val").innerText = rate + "%";
 }

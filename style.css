@@ -1,28 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 body {
     background-color: black;
     font-family: arial;
     color: white;
 }
+
 h1{
     color: grey;
     font-family: verdana;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid lightgray;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .maindiv {
     background-color: white;
-    color: black;
-    width: 500px;
+    color: #000000;
+    height: auto;
+    width: 70%;
     padding: 20px;
     border-radius: 25px;
     margin: auto;
 }
+
+label {
+    display: block;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+input[type=range] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    float: left;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+#rate_val{
+    position: absolute;
+    margin-top: 45px;
+}
+
+#rate_val span{
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(360%, 0);
+}
+
+.maindiv fieldset {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+    border: none;
+}
+
+.maindiv fieldset .btn, .maindiv fieldset .result {
+    grid-column: 1 / -1;
+}
+
 .form-group {
+    position: relative;
     margin-bottom: 15px;
     margin-left: 20px;
 }
+
 mark {
     background-color: yellow;
     color: black;
 }
+
+button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
 footer {
     margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 20px;
 }
